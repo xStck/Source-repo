@@ -41,6 +41,7 @@ jobs:
           context: ./
           push: true
           tags: xstck/app-image:${{ env.NEW_VERSION }}
+          platforms: linux/amd64,linux/arm64
           
   kubernetesCI:
     name: Update deployment with new application version
