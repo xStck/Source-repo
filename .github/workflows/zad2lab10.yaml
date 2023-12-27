@@ -4,7 +4,7 @@ on: workflow_dispatch
       
 jobs:
   dockerCI:
-    name: Push Docker image to Docker Hub
+    name: dockerCI
     runs-on: ubuntu-latest
     steps:
       - name: Set Run ID to Variable
@@ -44,7 +44,7 @@ jobs:
           platforms: linux/amd64,linux/arm64
           
   kubernetesCI:
-    name: Update deployment with new application version
+    name: kubernetesCI
     runs-on: ubuntu-latest
     needs: dockerCI
     steps: 
