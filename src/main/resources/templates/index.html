@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        p {
+            display: inline;
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+<pre>
+    Dawid Nalepa 92963
+
+    Wersja aplikacji: <p th:text="${appVersion}"/>
+
+    Plik dockerfile do uruchomienia aplikacji:
+    FROM eclipse-temurin:17.0.4.1_1-jre-alpine
+    EXPOSE 80
+    ADD build/libs/app.jar app.jar
+    ENTRYPOINT java ${JAVA_OPTS} -jar app.jar
+</pre>
+</body>
+</html>
