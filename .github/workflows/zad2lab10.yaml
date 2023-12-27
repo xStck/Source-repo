@@ -53,6 +53,8 @@ jobs:
         uses: actions/checkout@master
         with:
           repository: xStck/Config-repo
+          token: ${{ secrets.PAT_GITHUB }}
+          
       - name: Edit deployment
         run: |
           git config --global user.name "ci"
