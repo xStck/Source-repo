@@ -25,7 +25,7 @@ Gdzie:
 Wersja aplikacji: <p th:text="${appVersion}"/>
 ```
 
-odczytuje wersję aplikacji ze zmiennej środowiskowej zawartej w pliku **application.properties**, która aktualizuje się wraz z odpaleniem/aktualizacują deploymentu (zostało to zdefiniowane w pliku **deployment.yaml** w sekcji **env** w repozytorium **Config-repo**).
+odczytuje wersję aplikacji ze zmiennej środowiskowej zawartej w pliku **application.properties**, która aktualizuje się wraz z odpaleniem/aktualizacują deploymentu (zostało to zdefiniowane w pliku **deployment.yaml** w sekcji **env** w repozytorium **Config-repo (https://github.com/xStck/Config-repo)**).
 
 #### Potwierdzenie działania aplikacji
 
@@ -117,3 +117,7 @@ jobs:
 #### Potwierdzenie działania job-a kubernetesCI
 
 ![](screens/kubernetesCI.png)
+
+#### Kolejne wersje aplikacji (https://hub.docker.com/repository/docker/xstck/app-image/general)
+
+![](screens/dockerhub.png)
